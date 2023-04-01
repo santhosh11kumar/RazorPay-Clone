@@ -7,8 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Razorpay</title>
    
+
+   <style>
+    .Scroll_animation{
+       animation: scroll infinite linear 30s;
+
+    }
+    @keyframes scroll {
+        from{
+           transform: translateY(50%);
+        }
+        to{
+            transform: translateY(-90%); 
+        }
+    }
+   </style>
+
    <script src="https://unpkg.com/feather-icons"></script>
-  <link rel="stylesheet" href="/assets/index-f95815a6.css">
+
+   
+  <link rel="stylesheet" href="/assets/index-261a5de4.css">
 </head>
 <body>
     
@@ -87,7 +105,7 @@
       
 
             <div class="py-3">
-                <button class="relative flex  w-26 py-3 px-3 border rounded-sm text-sm font-semibold bg-white text-lightBlue300 border transition-all
+                <button class="relative flex  w-26 py-3 px-3 rounded-sm text-sm font-semibold bg-white text-lightBlue300 border transition-all
                 duration-200 hover:text-lightBlue500">
                      Sign Up<svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi w-[14px] h-[14px] ml-3 mt-1"><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg>
                 </button>
@@ -129,8 +147,8 @@
     </div>
    </div>
 
-    <div class ="absolute left-0 right-0  min-h-[179px] min-w-[100.1%] bg-white " style="z-index: 5;">
-        <img class="min-w-[100%] object-fill cover"  src="/assets/hero-shape-ae834698.svg" alt="">
+    <div class ="absolute left-0 right-0  w-screen bg-white " style="z-index: 5;">
+        <img class="w-screen "  src="/assets/hero-shape-ae834698.svg" alt="" style="background-size: 100% 100%;">
     </div>
 
    </section>
@@ -142,7 +160,7 @@
 
 
 
-<section class="relative mt-[190px]  over-flow-hidden">
+<section class="relative mt-[190px]  over-flow-hidden ">
 
     <div class="relative z-1">
         <img src="data:image/png;base64,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" alt="" loading="lazy"
@@ -214,7 +232,7 @@
                 </a>
 
 
-                <a href="" class="h-[51px]"><button class="bg-white text-lightBlue flex px-4 py-3 text-white font-semibold rounded-md transition-all duration-300 hover:text-gray-700">
+                <a href="" class="h-[51px]"><button class="bg-white  flex px-4 py-3 text-white font-semibold rounded-md transition-all duration-300 hover:text-gray-700">
                     Know More
                     <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi" style="width:18px; padding-top:4px"><path fill="currentColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
                     </button>
@@ -281,7 +299,7 @@
 
                     <a href="" >
                         <a href="#" class=" font-bold text-lightBlue500  group-hover:text-lightBlue300 transition-all duration-200" >Know More</a>
-                        <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500  text-lightBlue300 transition-all duration-200"></i>
+                        <i data-feather="chevron-right" class="w-5 h-5  text-lightBlue300 transition-all duration-200"></i>
                           </a>
 
                 </div>
@@ -325,7 +343,7 @@
 
                     <a href="" >
                         <a href="#" class=" font-bold text-lightBlue500  group-hover:text-lightBlue300 transition-all duration-200" >Know More</a>
-                        <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500  text-lightBlue300 transition-all duration-200"></i>
+                        <i data-feather="chevron-right" class="w-5 h-5   text-lightBlue300 transition-all duration-200"></i>
                           </a>
 
                 </div>
@@ -367,7 +385,7 @@
 
                     <a href="" >
                         <a href="#" class=" font-bold text-lightBlue500  group-hover:text-lightBlue300 transition-all duration-200" >Know More</a>
-                        <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500  text-lightBlue300 transition-all duration-200"></i>
+                        <i data-feather="chevron-right" class="w-5 h-5  text-lightBlue300 transition-all duration-200"></i>
                           </a>
 
                 </div>
@@ -408,7 +426,7 @@
 
                     <a href="" >
                         <a href="#" class=" font-bold text-lightBlue500  group-hover:text-lightBlue300 transition-all duration-200" >Know More</a>
-                        <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500  text-lightBlue300 transition-all duration-200"></i>
+                        <i data-feather="chevron-right" class="w-5 h-5  text-lightBlue300 transition-all duration-200"></i>
                           </a>
 
                 </div>
@@ -449,7 +467,7 @@
 
                     <a href="" >
                         <a href="#" class=" font-bold text-lightBlue500  group-hover:text-lightBlue300 transition-all duration-200" >Know More</a>
-                        <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500  text-lightBlue300 transition-all duration-200"></i>
+                        <i data-feather="chevron-right" class="w-5 h-5  text-lightBlue300 transition-all duration-200"></i>
                           </a>
 
                 </div>
@@ -490,7 +508,7 @@
 
                     <a href="" >
                         <a href="#" class=" font-bold text-lightBlue500  group-hover:text-lightBlue300 transition-all duration-200" >Know More</a>
-                        <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500  text-lightBlue300 transition-all duration-200"></i>
+                        <i data-feather="chevron-right" class="w-5 h-5   text-lightBlue300 transition-all duration-200"></i>
                           </a>
 
                 </div>
@@ -512,9 +530,9 @@
 
 
 
-    <section >
+    <section class="" >
         <!--  Background shape Image -->
-        <div class="relative flex flex-col justify-between bg-[url(./Assets/images2/feature-section-2BG.svg)] bg-no-repeat bg-cover pb-[500px] mt-14 pt-[20rem]"
+        <div class="relative flex flex-col justify-between bg-[url(./Assets/images2/feature-section-2BG.svg)] bg-no-repeat  pb-[600px] mt-14 pt-[20rem]" style="background-size: 100% 100%;"
          >
 
         <h1 class="text-center text-white text-2xl leading-[1.2] tracking-wide font-bold pt-1 text-[25px]">Explore RazorpayX powered Business Banking</h1>
@@ -522,11 +540,11 @@
 
 
         <!-- content -->
-        <div class="divcenter relative block mx-auto relative pt-4">
+        <div class="divcenter block mx-auto relative pt-4">
             
                 <!-- Edges images -->
             <img src="/assets/x-flame-1-12c499a3.png" alt="" class="absolute -top-[142px] -left-[140px] w-[200px]">
-            <img src="/assets/x-flame-2-9092ee28.png" alt="" class="absolute  top-[200px] -right-[180px] w-[200px]">
+            <img src="/assets/x-flame-2-9092ee28.png" alt="" class="absolute  top-[200px] -right-[180px] w-[200px] z-5">
 
 
             <!-- Image + Content -->
@@ -599,7 +617,7 @@
                         </a>
                         <a href="" class="w-[30px]">
                             <a href="#" class=" font-semibold text-lightBlue500 ] text-[18px] group-hover:text-lightBlue300 transition-all duration-200" >Know More</a>
-                            <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500  text-lightBlue300 transition-all duration-200"></i>
+                            <i data-feather="chevron-right" class="w-5 h-5  text-lightBlue300 transition-all duration-200"></i>
                         </a>
                     </div>
 
@@ -661,7 +679,7 @@
 
                     <a href="" class=" flex mt-10 font-bold text-lightBlue500  hover:text-lightBlue300 transition-all duration-200" >
                         Know More
-                        <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 mt-0.5 text-lightBlue300 transition-all ease-out duration-200"></i>
+                        <i data-feather="chevron-right" class="w-5 h-5 mt-0.5 text-lightBlue300 transition-all ease-out duration-200"></i>
                     </a>
 
 
@@ -715,7 +733,7 @@
 
                     <a href="" class=" flex mt-11 font-semibold text-lightBlue500  hover:text-lightBlue300 transition-all duration-200" >
                         Know More
-                        <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 mt-0.5 text-lightBlue300  transition-all ease-out duration-200"></i>
+                        <i data-feather="chevron-right" class="w-5 h-5 mt-0.5 text-lightBlue300  transition-all ease-out duration-200"></i>
                     </a>
 
                     <!-- wave -->
@@ -768,7 +786,7 @@
 
                     <a href="" class=" flex mt-10 font-bold text-lightBlue500  hover:text-lightBlue300 transition-all duration-200" >
                         Know More
-                        <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 mt-0.5 text-lightBlue300 transition-all duration-200"></i>
+                        <i data-feather="chevron-right" class="w-5 h-5  mt-0.5 text-lightBlue300 transition-all duration-200"></i>
                     </a>
 
 
@@ -824,7 +842,7 @@
 
 
 
-    <section class="relative bg-white">
+    <section class="relative bg-white z-10 pb-20">
 
         <!-- Dots image -->
         
@@ -980,9 +998,228 @@
     </div>
         
     </section>
+  
+
+    <!-- Features section -->
+
+    <section class="bg-[url(./Assets/images2/core-features-sectionBg.svg)]  bg-cover  bg-no-repeat
+                    relative pt-48 h-[950px] bg-white pb-20 mb-20 z-[10]" style="background-size: 100% 100%;">
+                
+
+       <div class=" relative flex-col divcenter">
+
+                <!-- Features -->
+                <h2 class="text-xl text-center text-white">Features</h2>
+
+                <!-- blue underline -->
+                <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+
+                <!-- Description -->
+                <p class=" mx-auto max-w-[420px] text-white opacity-80">Empower your business with all the right tools to accept online payments and provide the best customer experience
+                        </p>
+
+            <div class="grid grid-cols-4 gap-10 pt-8 text-white">
+                <!-- Box 1 -->
+                <div >
+                  
+                    <!-- Image -->
+                    <img src="/assets/instant-activation-icon-5dc1b16b.svg" alt="">
+
+                    <!-- Heading -->
+                    <h3 class="font-semibold text-xl py-4">Instant Activation</h3>
+
+                    <!-- Content -->
+                    <p class=" tracking-wider text-[15.5px] mx-auto">
+                        Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.
+                    </p>
+
+                    </div>
+
+                <!-- Box 2 -->
+                <div>
+                  
+                    <!-- Image -->
+                    <img src="/assets/easy-integration-385f4c4d.svg" alt="">
+
+                    <!-- Heading -->
+                    <h3 class="font-semibold text-xl py-4">Easy Integration</h3>
+
+                    <!-- Content -->
+                    <p class=" tracking-wider text-[15.5px] mx-auto">
+                        With plugins for all major platforms and languages, integrate and go live with Razorpay in less than an hour.
+                    </p>
+
+                    </div>
+
+                <!-- Box 3 -->
+                <div>
+                  
+                    <!-- Image -->
+                    <img src="/assets/api-driven-icon-f4b24f36.svg" alt="">
+
+                    <!-- Heading -->
+                    <h3 class="font-semibold text-xl py-4">API Driven</h3>
+
+                    <!-- Content -->
+                    <p class=" tracking-wider text-[15.5px] mx-auto">
+                        Build your business for scale with our complete API-driven automation that requires zero manual intervention.
+                    </p>
+
+                    </div>
+
+                <!-- Box 4 -->
+                <div>
+                  
+                    <!-- Image -->
+                    <img src="/assets/payment-modes-746c757f.svg" alt="">
+
+                    <!-- Heading -->
+                    <h3 class="font-semibold text-xl py-4">100+ payment modes</h3>
+
+                    <!-- Content -->
+                    <p class=" tracking-wider text-[15.5px] mx-auto">
+                        Offer your customers the luxury of all payment modes including Credit/Debit cards, Netbanking, UPI, Wallets etc.
+                    </p>
+
+                    </div>
+
+                <!-- Box 5 -->
+                <div>
+                  
+                    <!-- Image -->
+                    <img src="/assets/simple-pricing-ef5880b2.svg" alt="">
+
+                    <!-- Heading -->
+                    <h3 class="font-semibold text-xl py-4">Simple Pricing</h3>
+
+                    <!-- Content -->
+                    <p class=" tracking-wider text-[15.5px] mx-auto">
+                        Our innovative payment solutions with competitive pricing make payments simpler.
+                    </p>
+
+                    </div>
+
+                <!-- Box  6-->
+                <div>
+                  
+                    <!-- Image -->
+                    <img src="/assets/industry-support-icon-dfe9d1a9.svg" alt="">
+
+                    <!-- Heading -->
+                    <h3 class="font-semibold text-xl py-4">Best in Industry Support</h3>
+
+                    <!-- Content -->
+                    <p class=" tracking-wider text-[15.5px] mx-auto">
+                        Always available email, phone and chat based support to help you in your every step.
+                    </p>
+
+                    </div>
+
+                <!-- Box  7-->
+                <div>
+                  
+                    <!-- Image -->
+                    <img src="/assets/dashboard-reporting-icon-9dc031ab.svg" alt="">
+
+                    <!-- Heading -->
+                    <h3 class="font-semibold text-xl py-4">Dashboard Reporting</h3>
+
+                    <!-- Content -->
+                    <p class=" tracking-wider text-[15.5px] mx-auto">
+                        Real-time data and insights on your Razorpay Dashboard to make informed business decisions.
+                    </p>
+
+                    </div>
+
+                <!-- Box  8-->
+                <div>
+                  
+                    <!-- Image -->
+                    <img src="/assets/secure-icon-1eb94f5d.svg" alt="">
+
+                    <!-- Heading -->
+                    <h3 class="font-semibold text-xl py-4">Secure</h3>
+
+                    <!-- Content -->
+                    <p class=" tracking-wider text-[15.5px] mx-auto">
+                        PCI DSS Level 1 compliant solution which removes your burden of regulatory compliance.
+                    </p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
 
 
 
+
+
+    <!-- Join razorpay section -->
+    <section class=" bg-[#f5f8fe] h-[44rem]">
+    
+     <div class="relative divcenter flex justify-around -mt-[10rem] h-[40rem]">
+
+        <!-- left part content-->
+        <div class="w-[40%]  pt-60 pb-20">
+
+        <!-- Heading  -->
+            <div class="font-bold text-2xl text-deepBlueHead">Join the 50,00,000 businesses using Razorpay</div>
+
+
+
+        <!-- bluegreen line -->
+            <div class="w-6 h-1 bg-greenLight  my-4 mb-10"></div>
+
+        <!-- content -->
+
+            <p class="opacity-80">
+                We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.
+            </p>
+
+            <br>
+            
+            <p class="font-mullish opacity-80">
+                Focus on your business while we handle the complexities of payments for you.
+            </p>
+
+        <!-- Get started button -->
+        <div class="pt-5">
+            <a href="" >
+                <button class="relative flex  w-26 py-3 px-3 rounded-md text-sm font-semibold bg-lightBlue text-white border transition-all
+                duration-200 hover:bg-lightBlue500">
+                     Get Started <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi w-[14px] h-[14px] ml-3 mt-1"><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg>
+                </button>
+            </a>
+        </div>
+
+
+       </div>
+
+
+        <!-- Right part image scrolling -->
+
+        <div class="bg-[#f5f8fe] absolute z-[4] top-2 h-[10rem] w-[45%]"
+        style="background: linear-gradient(180deg, #f4f8ff, #fff0)"></div>
+        <div class="w-[45%]">
+            <img src="/assets/comanies-f772fc25.png" alt="" class="Scroll_animation relative z-[2] ">
+
+        </div>
+        <div class="bg-[#f5f8fe] absolute z-[2] -bottom-[4rem] right-10 h-[10rem] w-[45%]"
+            style="background: linear-gradient(180deg,#fff0, #f4f8ff)"></div>
+
+    </div>
+
+    </section>
+
+    <section class="relative bg-white h-[120rem] z-[10]">
+        <div></div>
+    </section>
+
+   
 
     </div>
 </div>
