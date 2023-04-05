@@ -41,11 +41,27 @@
       .hero_section{
         flex-wrap: wrap;
       }
+      .Experience_people{
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 50rem;
+      }
    } 
        
    @media only screen and (max-width: 770px) {
      .feature_section{
       padding-top: 20rem;
+     }
+     .super_charge_1{
+      width: 100%;
+      text-align: center;
+     }
+     .super_charge_img{
+      display: none;
+     }
+     .super_charge_btn{
+      width: 100%;
+      align-items: center;
      }
     
     }
@@ -233,28 +249,28 @@
 
             <ul class="w-full pt-9 mb-8 h-[16.25rem] text-[18px]">
                 <li class="flex gap-3 opacity-80 leading-loose items-center">
-                    <i data-feather="check" class="text-greenLight"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-greenLight"><polyline points="20 6 9 17 4 12"></polyline></svg>
                      100+ Payment Methods
                         </li>
                 <li class="flex gap-3 opacity-80 leading-loose items-center">
-                    <i data-feather="check" class="text-greenLight"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-greenLight"><polyline points="20 6 9 17 4 12"></polyline></svg>
                     Industry Leading Success Rate
                         </li>
                 <li class="flex gap-3 opacity-80 leading-loose items-center">
-                    <i data-feather="check" class="text-greenLight"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-greenLight"><polyline points="20 6 9 17 4 12"></polyline></svg>
                     Superior Checkout Experience
                         </li>
                 
                 <li class="flex gap-3 opacity-80 leading-loose items-center">
-                    <i data-feather="check" class="text-greenLight"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-greenLight"><polyline points="20 6 9 17 4 12"></polyline></svg>
                     Easy to Integrate
                         </li>
                 <li class="flex gap-3 opacity-80 leading-loose items-center">
-                    <i data-feather="check" class="text-greenLight"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-greenLight"><polyline points="20 6 9 17 4 12"></polyline></svg>
                     Instant Settlements from day 1
                         </li>
                 <li class="flex gap-3 opacity-80 leading-loose items-center">
-                    <i data-feather="check" class="text-greenLight"></i>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-greenLight"><polyline points="20 6 9 17 4 12"></polyline></svg>
                     In-depth Reporting and Insights
                         </li>
             </ul>
@@ -264,14 +280,14 @@
 
             <div class="flex w-full h-[200px]">
                 
-                <a href="" class="h-[51px]"><button class="tracking-wide bg-lightBlue border border-lightBlue300 flex px-4 py-3 text-white font-bold rounded-md transition-all duration-300 hover:bg-lightBlue500">
+                <a href="" class="h-[51px] super_charge_btn"><button class="super_charge_btn tracking-wide bg-lightBlue border border-lightBlue300 flex px-4 py-3 text-white font-bold rounded-md transition-all duration-300 hover:bg-lightBlue500">
                     Sign Up Now 
                     <svg viewBox="0 0 20 24" focusable="false" class="chakra-icon css-onkibi w-[16px] h-[14px] ml-3 mt-0.5" style="height:20px"><path fill="currentColor" d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg>
                 </button>
                 </a>
 
 
-                <a href="" class="h-[51px]"><button class="bg-white  flex px-4 py-3 text-white font-semibold rounded-md transition-all duration-300 hover:text-gray-700">
+                <a href="" class="h-[51px]"><button class="bg-white super_charge_btn flex px-4 py-3 text-Graywhite font-semibold rounded-md transition-all duration-300 hover:text-gray-700">
                     Know More
                     <svg viewBox="0 0 24 24" focusable="false" class="chakra-icon css-onkibi" style="width:18px; padding-top:4px"><path fill="currentColor" d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></svg>
                     </button>
@@ -283,8 +299,8 @@
 
                    <!-- Image section -->
 
-        <div>
-            <img  src="/assets/payment-suite-f883499d.png" alt="" class="w-[66rem]"
+        <div class="super_charge_img">
+            <img  src="/assets/payment-suite-f883499d.png" alt="" class="w-[66rem]  "
             >
         </div>
               
@@ -1276,7 +1292,7 @@
         <div class="mx-auto">
 
             <!-- Heading -->
-            <h1 class=" font-bold text-[22px] opacity-95">An Experience <br>
+            <h1 class=" font-bold text-[22px] opacity-95 text-center">An Experience <br>
                 People Love to Talk About</h1>
 
             <!-- Blue line -->
